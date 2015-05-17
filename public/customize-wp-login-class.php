@@ -73,7 +73,7 @@ class Customize_WP_Login {
     private function __construct() {
         // Load plugin text name & description ready to translate
         $plugin_tanslable_name = __('Customize WP-Login','customize-wp-login');
-        $plugin_tanslable_desc = __('Customize WP-Login by AlterTech provide a visual editor to customize the wp-login page and if you want should enable social login.','customize-wp-login');
+        $plugin_tanslable_desc = __('Customize WP-Login by AlterTech provide a visual editor to customize the wp-login page and if you want should enable social login. In the advanced settings you can enable the function for rewriting url login.','customize-wp-login');
         // Load plugin text domain
         add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
         // Activate plugin when new blog is added
@@ -130,10 +130,12 @@ function customize_wp_login_change_title_on_logo() {
 add_filter('login_headertitle', 'customize_wp_login_change_title_on_logo');
 add_filter('login_headerurl','customize_wp_login_login_page_custom_link');
 }
+
         include_once( 'views/customize-wp-login-page.php' );
 }
         add_action( 'login_enqueue_scripts', 'customize_wp_login_style_login_page' );
     }
+
     /**
      * Return the plugin slug.
      *

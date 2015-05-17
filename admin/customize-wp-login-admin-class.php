@@ -65,7 +65,7 @@ class Customize_WP_Login_Admin {
 		// Add an action link pointing to the options page.
 		$plugin_basename = plugin_basename( plugin_dir_path( realpath( dirname( __FILE__ ) ) ) . $this->plugin_slug . '.php' );
 		add_filter( 'plugin_action_links_' . $plugin_basename, array( $this, 'add_action_links' ) );
-
+                
 	}
 
 	/**
@@ -189,8 +189,10 @@ wp_enqueue_script('thickbox');
         register_setting( 'customize-wp-login-options',  'customize-wp-login_login_button_style');
 	register_setting( 'customize-wp-login-options',  'customize-wp-login-dashicons_picker_settings');
 	register_setting( 'customize-wp-login-options', 'customize-wp-login_custom_css');
-       
-}	
+	register_setting( 'customize-wp-login-options-advanced-enabler', 'customize-wp-login-wp_enable_rewrite_rules');
+        
+}
+
 
         }
 	/**
@@ -199,6 +201,7 @@ wp_enqueue_script('thickbox');
 	 * @since    1.0.0
 	 */
 	public function display_plugin_admin_page() {
+            
 		include_once( 'views/admin.php' );
   }
 
@@ -241,6 +244,5 @@ wp_enqueue_script('thickbox');
 	public function filter_method_name() {
 
 	}
-
 
 }
