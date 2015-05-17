@@ -12,8 +12,8 @@ Customize WP-Login by AlterTech provide a visual editor to customize the wp-logi
 
 == Description ==
 
-<h3>Customize WP-Config</h3>
-<p>If you are looking for a plugin to customize the graphics and settings pagin WordPress login, Customize WP-Config is for you.</p>
+<h3>Customize WP-Login</h3>
+<p>If you are looking for a plugin to customize the graphics and settings pagin WordPress login, Customize WP-Login is for you.</p>
 <p>Once you installed and activated the plugin settings will need to see changes in the login page, you can choose between various graphics settings and more, thanks to a simple and intuitive administration panel.</p>
 <p>Security tweaks, you can rename wp-login slug: In the advanced settings you can enable the function for rewriting url login.</p>
 <h4>This is stable version 1.2.1 and is compatible up to 4.2.2</h4>
@@ -21,7 +21,7 @@ Customize WP-Login by AlterTech provide a visual editor to customize the wp-logi
 
 == Installation ==
 
-How install Customize WP-Config plugin:
+How install Customize WP-Login plugin:
 
 = Using The WordPress Dashboard =
 
