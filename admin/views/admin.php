@@ -38,8 +38,18 @@
         <tr valign="top">
         <th scope="row"><?php echo  __( 'WP-Login Background Color', $this->plugin_slug ); ?> :</th>
         <td><input type="text" name="customize-wp-login-wp_login_bg" value="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg') ); ?>" class="wp-color-picker-field" data-default-color="#f1f1f1" /></td>
+        <p class="alter_wp_description"><?php echo  __( 'if you use image the color is below', $this->plugin_slug ); ?></p>
         </tr>
-         
+        
+        <tr class="alter-tr" valign="top">
+        <th scope="row"><?php echo  __( 'WP-Login Background Image', $this->plugin_slug ); ?> :</th>
+        <td class="alter-td">
+            <input type="text" name="customize-wp-login-wp_login_bg_logo_image" id="upload_image" value="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>" size='40' />
+            <input type="button" class='button-secondary' id="customize-wp-login-wp_login_bg_logo_image" value="<?php echo  __( 'Upload Image', $this->plugin_slug ); ?>" />
+        <p class="alter_wp_description"><?php echo  __( 'paste url or upload image', $this->plugin_slug ); ?></p>
+        <div class="wp-custom-preview_bg"><?php if( !get_option( 'customize-wp-login-wp_login_bg_logo_image' ) ) { } else { ?><p><img src="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>" /></p><h4><?php echo  __( 'Custom Login Background Image', $this->plugin_slug ); ?></h4><?php } ?></div>
+        </td>
+        </tr>        
         <tr valign="top">
         <th scope="row"><?php echo  __( 'WP-Login Text Color', $this->plugin_slug ); ?> :</th>
         <td><input type="text" name="customize-wp-login-wp_login_label_color" value="<?php echo esc_attr( get_option('customize-wp-login-wp_login_label_color') ); ?>" class="wp-color-picker-field" data-default-color="#777"  /></td>

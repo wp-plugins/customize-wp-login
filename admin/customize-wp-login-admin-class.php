@@ -180,6 +180,7 @@ wp_enqueue_script('thickbox');
 	         add_action( 'admin_init', 'customize_wp_login_register_settings' );
                  function customize_wp_login_register_settings() {
 	register_setting( 'customize-wp-login-options','customize-wp-login-wp_login_bg');
+	register_setting( 'customize-wp-login-options', 'customize-wp-login-wp_login_bg_logo_image');        
 	register_setting( 'customize-wp-login-options', 'customize-wp-login-wp_login_label_color');
 	register_setting( 'customize-wp-login-options', 'customize-wp-login-wp_login_form_bg');
 	register_setting( 'customize-wp-login-options', 'customize-wp-login-wp_login_logo_image');
@@ -213,7 +214,7 @@ wp_enqueue_script('thickbox');
 	public function add_action_links( $links ) {
 		return array_merge(
 				array(
-			'settings' => '<a href="' . admin_url( 'options-general.php?page=' . $this->plugin_slug ) . '">' . __( 'Settings' ) . '</a>',
+			'settings' => '<a href="' . admin_url( 'admin.php?page=' . $this->plugin_slug ) . '">' . __( 'Settings' ) . '</a>',
 			'donate' => '<a href="https://www.eatscode.com/" target="_blank" >' . __( 'Donate', $this->plugin_slug ) . '</a>'
 				), $links
 		);

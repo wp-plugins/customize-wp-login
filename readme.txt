@@ -4,7 +4,7 @@ Donate link: http://eatscode.com/
 Tags: login, customize, social, custom login, login editor, social login, login button
 Requires at least: 3.9
 Tested up to: 4.2
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ Will soon be available.
 2. This screen shot is of the advanced settings section.
 
 == Changelog ==
+
+= 1.2.3 =
+* Add background image feature.
 
 = 1.1.0 =
 * Add rewrite login url feature.

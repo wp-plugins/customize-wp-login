@@ -65,10 +65,17 @@ font-size: 28px;
 position: relative;
 top: 7px;
 }
-   <?php } ?>
+   <?php } if( !get_option( 'customize-wp-login-wp_login_bg' ) ) {} else { ?>
         body.login.login-action-login.wp-core-ui, body.login, html {
   background-color:<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg') ); ?> !important;
-        }        
+        }    
+   <?php } if( !get_option( 'customize-wp-login-wp_login_bg_logo_image' ) ) {} else { ?>
+        body.login.login-action-login.wp-core-ui, body.login, html {
+  background-image:url(<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>) !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+        }
+   <?php } ?>
         .login label, .login .message, .login #nav a, .login #backtoblog a, p#nav {
 color:<?php echo esc_attr( get_option('customize-wp-login-wp_login_label_color') ); ?> !important;
         }

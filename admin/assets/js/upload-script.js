@@ -6,7 +6,11 @@ jQuery(document).ready(function ($) {
 	 	tb_show('', 'media-upload.php?type=image&TB_iframe=true');
 	 	return false;
 	});
- 
+	jQuery('#customize-wp-login-wp_login_bg_logo_image').click(function() {
+	 	formfield = jQuery('#upload_image').attr('name');
+	 	tb_show('', 'media-upload.php?type=image&TB_iframe=true');
+	 	return false;
+	}); 
 	window.send_to_editor = function(html) {
 	 imgurl = jQuery('img',html).attr('src');
 	 jQuery('#upload_image').val(imgurl);
