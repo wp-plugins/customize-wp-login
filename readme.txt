@@ -4,7 +4,7 @@ Donate link: http://eatscode.com/
 Tags: login, customize, social, custom login, login editor, social login, login button
 Requires at least: 3.9
 Tested up to: 4.2
-Stable tag: 1.2.3
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Customize WP-Login by AlterTech provide a visual editor to customize the wp-logi
 <p>If you are looking for a plugin to customize the graphics and settings pagin WordPress login, Customize WP-Login is for you.</p>
 <p>Once you installed and activated the plugin settings will need to see changes in the login page, you can choose between various graphics settings and more, thanks to a simple and intuitive administration panel.</p>
 <p>Security tweaks, you can rename wp-login slug: In the advanced settings you can enable the function for rewriting url login.</p>
-<h4>This is stable version 1.2.1 and is compatible up to 4.2.2</h4>
+<h4>This is stable version 1.2.5 and is compatible up to 4.2.2</h4>
 
 
 == Installation ==
@@ -68,8 +68,11 @@ Will soon be available.
 
 == Changelog ==
 
-= 1.2.3 =
+= 1.2.5 =
 * Add background image feature.
+
+= 1.2.3 =
+* Fixed multiple upload.
 
 = 1.1.0 =
 * Add rewrite login url feature.

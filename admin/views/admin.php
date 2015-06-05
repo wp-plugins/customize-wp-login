@@ -44,8 +44,8 @@
         <tr class="alter-tr" valign="top">
         <th scope="row"><?php echo  __( 'WP-Login Background Image', $this->plugin_slug ); ?> :</th>
         <td class="alter-td">
-            <input type="text" name="customize-wp-login-wp_login_bg_logo_image" id="upload_image" value="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>" size='40' />
-            <input type="button" class='button-secondary' id="customize-wp-login-wp_login_bg_logo_image" value="<?php echo  __( 'Upload Image', $this->plugin_slug ); ?>" />
+            <input type="text" name="customize-wp-login-wp_login_bg_logo_image" id="upload_image1" value="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>" size='40' />
+            <input type="button" class='button-secondary' id="customize-wp-login-upload_image_bg_button" value="<?php echo  __( 'Upload Image', $this->plugin_slug ); ?>" />
         <p class="alter_wp_description"><?php echo  __( 'paste url or upload image', $this->plugin_slug ); ?></p>
         <div class="wp-custom-preview_bg"><?php if( !get_option( 'customize-wp-login-wp_login_bg_logo_image' ) ) { } else { ?><p><img src="<?php echo esc_attr( get_option('customize-wp-login-wp_login_bg_logo_image') ); ?>" /></p><h4><?php echo  __( 'Custom Login Background Image', $this->plugin_slug ); ?></h4><?php } ?></div>
         </td>

@@ -127,7 +127,7 @@ class Customize_WP_Login_Admin {
 			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery', 'jquery-ui-tabs' ), Customize_WP_Login::VERSION );
                         wp_enqueue_script( $this->plugin_slug . '-color-picker-script', plugins_url('assets/js/color-picker-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
                         wp_enqueue_script( $this->plugin_slug . '-upload-script', plugins_url('assets/js/upload-script.js', __FILE__ ), array( 'jquery','media-upload','thickbox' ), false, true );
-                        wp_enqueue_script( $this->plugin_slug . '-preview-script', plugins_url('assets/js/customize-wp-preview.js', __FILE__ ), array( 'jquery','media-upload','thickbox' ), false, true );
+                        wp_enqueue_script( $this->plugin_slug . '-preview-script', plugins_url('assets/js/customize-wp-preview.js', __FILE__ ), array( 'jquery','thickbox' ), false, true );
 	                wp_enqueue_script( $this->plugin_slug . '-dashicons-picker', plugins_url('assets/js/dashicons-picker.js', __FILE__ ), array( 'jquery' ), false );
 wp_enqueue_script('media-upload');
 wp_enqueue_script('thickbox');
